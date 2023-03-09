@@ -2,3 +2,11 @@
 console.log('Я' + ' учу');
 // console.log('учу');
 console.log('JS');
+
+const COLOR_EYE = "#0FF";
+console.log(COLOR_EYE);
+
+let userName = "Вася";
+let user = "Никита";
+user = userName;
+console.log(user);
