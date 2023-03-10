@@ -41,3 +41,23 @@ console.log(typeof userAge);
 console.log(userHeight);
 console.log(typeof userHeight);
 
+let getInfinity = 58 / 0;
+console.log(getInfinity);
+console.log(typeof getInfinity);
+
+let getInfinity2 = -58 / 0;
+console.log(getInfinity2);
+console.log(typeof getInfinity2);
+
+let getNan = 'Фрилансер' / 10;
+console.log(getNan);
+console.log(typeof getNan);
+
+const bigInteger = 12345678901234567890123456789n;
+console.log(typeof bigInteger);
+
+let userNameV1 = "Фрилансер по жизни";
+console.log(typeof userNameV1);
+
+let userNameV2 = 'Фрилансер по жизни';
+console.log(typeof userNameV2);
