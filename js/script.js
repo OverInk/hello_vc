@@ -61,3 +61,23 @@ console.log(typeof userNameV1);
 
 let userNameV2 = 'Фрилансер по жизни';
 console.log(typeof userNameV2);
+
+let userInfo = {
+	name: "Фрилансер по жизни",
+	age: 36
+}
+console.log(userInfo);
+console.log(typeof userInfo);
+
+let id = Symbol("id");
+console.log(typeof id);
+
+let funcV = function name(params) { }
+console.log(typeof funcV);
+
+let userA = 58;
+console.log(userA);
+console.log(typeof userA);
+userA = String(userA);
+console.log(userA);
+console.log(typeof userA);
