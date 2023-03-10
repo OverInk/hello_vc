@@ -81,3 +81,27 @@ console.log(typeof userA);
 userA = String(userA);
 console.log(userA);
 console.log(typeof userA);
+
+
+let userB = "58";
+console.log(userB);
+console.log(typeof userB);
+userB = Number(userB);
+console.log(userB);
+console.log(typeof userB);
+
+let userC = "Фрилансер";
+userC = Number(userC);
+console.log(userC);
+console.log(typeof userC);
+
+let userD = "36" / "6";
+console.log(userD);
+console.log(typeof userD);
+
+let userF = "";
+console.log(userF);
+console.log(typeof userF);
+userF = Boolean(userF);
+console.log(userF);
+console.log(typeof userF);
