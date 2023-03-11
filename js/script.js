@@ -105,3 +105,26 @@ console.log(typeof userF);
 userF = Boolean(userF);
 console.log(userF);
 console.log(typeof userF);
+//Выведится истиа
+if (0) {
+	console.log('Loj');
+} else if (" ") {
+	console.log('Istina!');
+}
+//Здесь будет правда, тк 2 == производит приравнивание типов
+if (5 == "5") {
+	console.log('Istina');
+} else {
+	console.log('Loj');
+}
+//Здесь будет ложь, так как три === делает строгое сравнение, должно быть
+//одного типа, а не number and string
+if (1 === "1") {
+	console.log('Istina');
+} else {
+	console.log('Loj');
+}
+//Здесь ложь, так как && - означает "и то, и другое", а 92 больше 11, НО
+//58 не меньше 100!
+let message1 = (92 > '11' && 58 < 100) ? 'Istina' : 'Loj';
+console.log(message);
