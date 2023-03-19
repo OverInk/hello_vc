@@ -127,4 +127,18 @@ if (1 === "1") {
 //Здесь ложь, так как && - означает "и то, и другое", а 92 больше 11, НО
 //58 не меньше 100!
 let message1 = (92 > '11' && 58 < 100) ? 'Istina' : 'Loj';
-console.log(message);
+console.log(message1);
+
+
+//Операторы JS. Проверка взятие остатка от деления
+let x;
+x = 11 % 3;
+console.log(`Результат взятка остатка от деления:${x}`);
+
+let resuilOne = 10 * "80";
+console.log(resuilOne);
+console.log(typeof resuilOne);
+
+let resultTwo = 3 - "Free";
+console.log(resultTwo);
+console.log(typeof resultTwo);
