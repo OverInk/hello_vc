@@ -142,3 +142,7 @@ console.log(typeof resuilOne);
 let resultTwo = 3 - "Free";
 console.log(resultTwo);
 console.log(typeof resultTwo);
+
+let resultTh = (8 + 2, 19 + 1);
+console.log(resultTh++);
+console.log(resultTh);
