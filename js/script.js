@@ -154,3 +154,33 @@ console.log(userGH);
 
 userGH = ++userG;
 console.log(userGH);
+
+
+let num1 = 0;
+while (num1 < 5) {
+	console.log(num1);
+	num1++;
+};
+
+let numO = 5;
+while (numO) {
+	console.log(numO);
+	numO--;
+};
+
+for (let numT = 0; numT < 5; numT++) {
+	console.log(numT);
+};
+
+let numTh = 0;
+for (; numTh < 5; numTh++) {
+	console.log(numTh);
+	if (numTh == 2) break;
+};
+console.log(`Работа окончена: numTh = ${numTh}`);
+
+let numF = 0;
+for (; numF < 5; numF++) {
+	if (numF == 2) continue;
+	console.log(numF);
+};
