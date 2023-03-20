@@ -172,6 +172,13 @@ for (let numT = 0; numT < 5; numT++) {
 	console.log(numT);
 };
 
+
+let numF = 0;
+for (; numF < 5; numF++) {
+	if (numF == 2) continue;
+	console.log(numF);
+};
+
 let numTh = 0;
 for (; numTh < 5; numTh++) {
 	console.log(numTh);
@@ -179,8 +186,47 @@ for (; numTh < 5; numTh++) {
 };
 console.log(`Работа окончена: numTh = ${numTh}`);
 
-let numF = 0;
-for (; numF < 5; numF++) {
-	if (numF == 2) continue;
-	console.log(numF);
+//через while
+let dom1 = 1;
+while (dom1 < 6) {
+	console.log(dom1);
+	dom1++;
 };
+
+//через конструкцию do..while
+let dom2 = 1;
+do {
+	console.log(dom2);
+	dom2++;
+} while (dom2 < 6);
+
+
+//через конструкцию for (попробуй не задавать новый dom и посмотри, будет ли старое значение использоваться или новое)
+let dom3 = 1;
+for (; dom3 < 6; dom3++) {
+	console.log(dom3);
+};
+
+//Задача 2. Проверить, будет ли последний результат 0? Ответ нет, последний будет результат 1.
+let dom4 = 8;
+while (dom4) {
+	console.log(dom4);
+	dom4--;
+};
+
+//задача 3. Переписать на while
+let dom5 = 0;
+while (dom5 < 3) {
+	console.log(`Число: ${dom5}`);
+	dom5++;
+};
+
+//Задача 4. Прекратить цикл, когда size = 1
+firstFor: for (let dom6 = 0; dom6 < 2; dom6++) {
+	for (let size1 = 0; size1 < 3; size1++) {
+		console.log(size1);
+		if (size1 == 1) {
+			break firstFor;
+		}
+	}
+}
