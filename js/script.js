@@ -146,3 +146,11 @@ console.log(typeof resultTwo);
 let resultTh = (8 + 2, 19 + 1);
 console.log(resultTh++);
 console.log(resultTh);
+
+let userG = 0;
+let userGH;
+userGH = userG++;
+console.log(userGH);
+
+userGH = ++userG;
+console.log(userGH);
