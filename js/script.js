@@ -258,3 +258,21 @@ function calcSummm(numFive, numSix) {
 	}
 }
 console.log(calcSummm(2, 3));
+
+//Пример, где переменной задают функцию
+let getSum;
+if (2 > 1) {
+	getSum = function () {
+		let sum = 2 + 1;
+		console.log(sum);
+	};
+};
+getSum();
+
+
+//Домашка из урока с функциями.
+function showName() {
+	console.log('Вася!');
+}
+setTimeout(showName, 0);
+console.log('Коля!');
