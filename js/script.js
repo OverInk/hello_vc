@@ -275,4 +275,4 @@ function showName() {
 	console.log('Вася!');
 }
 setTimeout(showName, 0);
-console.log('Коля!');
+console.log('Коля!'); //Коля в консоле будет первее, чем Вася, так как задержка
