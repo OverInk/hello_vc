@@ -229,4 +229,32 @@ firstFor: for (let dom6 = 0; dom6 < 2; dom6++) {
 			break firstFor;
 		}
 	}
+};
+
+function calcSumm(numOne = 1, numTwo = 2) {
+	console.log(`Переменная numOne: ${numOne}`);
+	console.log(`Переменная numTwo: ${numTwo}`);
+
+	let numSumm = numOne + numTwo;
+
+	console.log(`Сумма: ${numSumm}`)
 }
+calcSumm();
+
+
+function calcSum(numThree, numFour) {
+	let numSum = numThree + numFour;
+	return numSum;
+}
+let funcRezult = calcSum(1, 2);
+console.log(`Сумма:${funcRezult}`);
+
+
+function calcSummm(numFive, numSix) {
+	if (numSix === 1) {
+		return numFive;
+	} else {
+		return numFive * calcSummm(numFive, numSix - 1);
+	}
+}
+console.log(calcSummm(2, 3));
