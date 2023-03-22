@@ -270,9 +270,9 @@ if (2 > 1) {
 getSum();
 
 
-//Домашка из урока с функциями.
+//Домашка из урока с функциями. (первая функция рабочая, но она всегда внизу, поэтому закомментирована)
 function showName() {
-	console.log('Вася!');
+	console.log('Никита с задержкой в 0сек!');
 }
 setTimeout(showName, 0);
 console.log('Коля!');
@@ -293,4 +293,16 @@ if (2 > 1) {
 	}
 }
 showMessage2();
+
+//Тема с объектами
+
+let userInf = {
+	name: "Вася",
+	age: 30,
+	"likes JS": true,
+};
+console.log(userInf);
+console.log(userInf.name);
+console.log(["likes JS"]);
+
 
