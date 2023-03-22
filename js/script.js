@@ -69,9 +69,6 @@ let userInfo = {
 console.log(userInfo);
 console.log(typeof userInfo);
 
-let id = Symbol("id");
-console.log(typeof id);
-
 let funcV = function name(params) { }
 console.log(typeof funcV);
 
@@ -304,5 +301,25 @@ let userInf = {
 console.log(userInf);
 console.log(userInf.name);
 console.log(["likes JS"]);
+
+let id = Symbol("id");
+let userInf2 = {
+	name: "Вася",
+	age: 30,
+	[id]: "Некое значение",
+};
+console.log(userInf2);
+
+let userInf3 = {
+	name: "Вася",
+	age: 30,
+	address: {
+		city: "Moskva",
+		street: "Freedom",
+	}
+};
+console.log(userInf3);
+console.log(userInf3.address);
+console.log(userInf3.address.city);
 
 
