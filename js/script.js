@@ -322,4 +322,39 @@ console.log(userInf3);
 console.log(userInf3.address);
 console.log(userInf3.address.city);
 
+//Проверка сущетсования свойства
+let userInf4 = {
+	name: "Вася",
+	// age: 30,
+};
+if (userInf4.age) {
+	console.log(userInf4);
+};
+
+//Проверка существование свойства и с выводом undefined
+//Опциональная цепочка
+let userInf5 = {
+	name: "Вася",
+	age: 30,
+	// address: {
+	// 	city: "Moskva",
+	// 	street: "Freedom",
+	// }
+};
+console.log(userInf5?.address?.street);
+
+//Тоже проверка, уже через оператор in
+let userInf6 = {
+	name: "Вася",
+	age: 30,
+	address: {
+		city: "Moskva",
+		street: "Freedom",
+	}
+};
+if ("name" in userInf6) {
+	console.log(userInf6.name);
+}
+
+
 
