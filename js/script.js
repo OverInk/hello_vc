@@ -356,5 +356,29 @@ if ("name" in userInf6) {
 	console.log(userInf6.name);
 }
 
+// Цикл for .. in
+let userInf7 = {
+	name: "Вася",
+	age: 30,
+	address: {
+		city: "Moskva",
+		street: "Freedom",
+	}
+};
+for (let key in userInf7) {
+	console.log(key);
+	console.log(userInf7[key]);
+};
+for (let key in userInf7.address) {
+	console.log(key);
+	console.log(userInf7.address[key]);
+}
 
+//Функция-конструктор. В конце создаются два объекта со своими значениями
+function UserInfo(age) {
+	this.name = "Kolya";
+	this.age = age;
+}
+console.log(new UserInfo(26));
+console.log(new UserInfo(13));
 
