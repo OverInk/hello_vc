@@ -6,10 +6,6 @@ console.log('JS');
 const COLOR_EYE = "#0FF";
 console.log(COLOR_EYE);
 
-let userName = "Вася";
-let user = "Никита";
-user = userName;
-console.log(user);
 
 let userUndefined;
 console.log(typeof userUndefined);
@@ -381,4 +377,62 @@ function UserInfo(age) {
 }
 console.log(new UserInfo(26));
 console.log(new UserInfo(13));
+
+//Домашка. Здесь метод копирование и выводится последнее значение, то есть 45.
+let userInf8 = {
+	name: "Вася",
+	age: 30,
+};
+console.log(userInf8);
+let userGG = userInf8;
+console.log(userGG);
+userGG.age = 45;
+console.log(userInf8.age);
+
+//Что будет в консоли?? В конце будет Вася, так как this не привязана к функции, даже после ее обнуления
+let userInf9 = {
+	name: "Вася",
+	age: 30,
+	showInf() {
+		console.log(`${this.name}`);
+	}
+};
+
+let userHH = userInf9;
+userInf9 = null;
+userHH.showInf();
+
+//Используется для userInf8. Выше он прописан. Должен выпасть Вася и 30
+for (const key in userInf8) {
+	const value = userInf8[key];
+	console.log(value);
+};
+
+//Используется для userInf7. Выше он прописан. Должно выпасть Москва и Фриден
+for (const key in userInf7.address) {
+	console.log(userInf7.address[key]);
+};
+
+//Задача 8. С мелкими подзадачами
+// 1.Создадим пустой объект
+let teskOne = {
+};
+console.log(teskOne);
+//Добавим свойство name со значением Коля и свойство age с 15
+teskOne.name = "Коля";
+teskOne.age = 15;
+console.log(teskOne);
+//Изменить свойство name на Женя
+teskOne.name = "Женя";
+console.log(teskOne);
+//Удалить свойство age со значением
+delete teskOne.age;
+console.log(teskOne);
+
+
+
+
+
+
+
 
