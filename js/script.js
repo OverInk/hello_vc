@@ -440,6 +440,16 @@ console.log(numOne2);
 let numOne3 = Math.round(-2.2);
 console.log(numOne3);
 
+//parseInt and parseFloat
+let numTwo1 = parseInt("150.48px");
+console.log(numTwo1);
+console.log(typeof numTwo1);
+
+let numTwo2 = parseFloat("150.48px");
+console.log(numTwo2);
+console.log(typeof numTwo2);
+
+
 
 
 
