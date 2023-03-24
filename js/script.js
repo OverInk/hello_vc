@@ -430,6 +430,17 @@ delete teskOne.age;
 console.log(teskOne);
 
 
+//Числа
+let numOne1 = Math.floor(5.8);
+console.log(numOne1);
+
+let numOne2 = Math.ceil(2.2);
+console.log(numOne2);
+
+let numOne3 = Math.round(-2.2);
+console.log(numOne3);
+
+
 
 
 
