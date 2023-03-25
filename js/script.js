@@ -450,6 +450,30 @@ console.log(numTwo2);
 console.log(typeof numTwo2);
 
 
+//Homework. #1
+let numm0 = 1.005 + Number.EPSILON;
+let numm = Math.round(numm0 * 100) / 100;
+console.log(numm);
+
+//Tesk 2. 
+let numm1 = parseFloat("135.17px");
+console.log(numm1);
+console.log(typeof numm1);
+
+//tesk 3
+let numm4 = 58 + "Frilanser";
+if (numm4 !== NaN) {
+	console.log('Резуьтат значения NaN');
+};
+//Проверка
+console.log(isNaN(58 + "Frilanser"));
+
+//tesk 4, where max
+console.log(Math.max(10, 58, 39, -150, 0));
+
+//tesk 5
+let numm5 = 56.98989;
+console.log(Math.floor(numm5));
 
 
 
