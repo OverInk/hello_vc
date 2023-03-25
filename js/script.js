@@ -465,6 +465,7 @@ let numm4 = 58 + "Frilanser";
 if (numm4 !== NaN) {
 	console.log('Резуьтат значения NaN');
 };
+
 //Проверка
 console.log(isNaN(58 + "Frilanser"));
 
