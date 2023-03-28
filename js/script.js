@@ -476,6 +476,12 @@ console.log(Math.max(10, 58, 39, -150, 0));
 let numm5 = 56.98989;
 console.log(Math.floor(numm5));
 
+//Строки в JS
+let text1 = 'фрилансер';
+console.log(text1.slice(5, 6));
+console.log(text1.toUpperCase());
+console.log(text1.slice(3, 6));
+console.log(text1.includes('лан', 4)); //будет false, тк начинается с 3 буквы подстрока лан
 
 
 
