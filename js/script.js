@@ -554,6 +554,21 @@ console.log(arrFive);
 
 console.log(arr.indexOf('Afrodita'));
 console.log(arr.includes('Dura'));
+console.log(arr.sort());
+
+let arrNumber = [22, 1, 8];
+console.log(arrNumber.sort((a, b) => a - b));
+
+console.log(arr.reverse());
+//Метод преобразования массива
+let str = 'Vanya, Kolya, Olya';
+let arrSTR = str.split(',');
+console.log(arrSTR);
+let arrSTR1 = str.split(',', 2);
+console.log(arrSTR1);
+
+let str1 = arr.join('');
+console.log(str1);
 
 
 
