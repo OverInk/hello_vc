@@ -483,6 +483,32 @@ console.log(text1.toUpperCase());
 console.log(text1.slice(3, 6));
 console.log(text1.includes('лан', 4)); //будет false, тк начинается с 3 буквы подстрока лан
 
+//Массивы
+let arrOne = [
+	"Kolya",
+	{
+		type: "JS",
+		age: 30,
+	},
+	true,
+	function () {
+		console.log("Привет, я есть я");
+	}
+];
+console.log(arrOne);
+console.log(arrOne[0]);
+console.log(arrOne[1].type);
+console.log(arrOne[2]);
+arrOne[3]();
+
+let matrix = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+];
+console.log(matrix);
+console.log(matrix[0][1]);
+
 
 
 
