@@ -509,6 +509,24 @@ let matrix = [
 console.log(matrix);
 console.log(matrix[0][1]);
 
+let arr = ['Vanya', 'Kolya', 'Olya',];
+arr[0] = 'Vika';
+console.log(arr);
+arr[3] = 'Dura'; //добавление нового
+console.log(arr);
+//Добавляет элемент в конец массива
+arr.push('Vasya');
+console.log(arr);
+//Удаляет элемент в начале
+arr.shift();
+console.log(arr);
+//Удаляет последний элемент
+arr.pop();
+console.log(arr);
+//Добавляет элементы в начало массива, сдвигая все остальные
+arr.unshift('Dima', 'Mura');
+console.log(arr);
+
 
 
 
