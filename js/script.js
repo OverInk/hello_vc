@@ -526,6 +526,34 @@ console.log(arr);
 //Добавляет элементы в начало массива, сдвигая все остальные
 arr.unshift('Dima', 'Mura');
 console.log(arr);
+//Удаляет элемент в 1 позиции
+arr.splice(1, 1);
+console.log(arr);
+//Удаляет элемент в первой позиции и возвращает в перемнную
+let remoted = arr.splice(1, 1);
+console.log(remoted);
+//Заменяет элемент в конкретном месте
+arr.splice(2, 1, 'NeDura');
+console.log(arr);
+//Добавляет элемент(ы) ПЕРЕд выбранной позицией
+arr.splice(1, 0, 'Afrodita', 'Misha');
+console.log(arr);
+//Удаляет элемент (если брать отрицательные числа). 
+//-1 - означает последний элемент 
+arr.splice(-1.1);
+console.log(arr);
+
+//Метод slice
+let arrTwo = arr.slice(1, 2);
+console.log(arrTwo);
+let arrF = arr.slice();
+console.log(arrF);
+//Метод concat
+let arrFive = arr.concat('Petya');
+console.log(arrFive);
+
+
+
 
 
 
