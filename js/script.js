@@ -570,6 +570,13 @@ console.log(arrSTR1);
 let str1 = arr.join('');
 console.log(str1);
 
+//
+let arrSumma = [2, 4, 6, 7];
+let reduceSumma = arrSumma.reduce(function (previousValue, item, index, array) {
+	return item + previousValue;
+}, 0);
+console.log(reduceSumma);
+
 
 
 
