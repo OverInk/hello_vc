@@ -552,6 +552,9 @@ console.log(arrF);
 let arrFive = arr.concat('Petya');
 console.log(arrFive);
 
+console.log(arr.indexOf('Afrodita'));
+console.log(arr.includes('Dura'));
+
 
 
 
