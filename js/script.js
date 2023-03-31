@@ -570,12 +570,56 @@ console.log(arrSTR1);
 let str1 = arr.join('');
 console.log(str1);
 
-//
+//Метод reduce
 let arrSumma = [2, 4, 6, 7];
 let reduceSumma = arrSumma.reduce(function (previousValue, item, index, array) {
 	return item + previousValue;
 }, 0);
 console.log(reduceSumma);
+
+//Домашка.#1
+let arrD = ['Vanya', 'Kolya', 'Olya'];
+let newArr = arrD;
+newArr.push('Petya');
+console.log(arrD);
+console.log(arrD.length);
+//#2
+
+let usersD = ['Afrodita', 'Vika'];
+usersD.push('Olya');
+console.log(usersD);
+usersD.splice(1, 1, 'Petya');
+console.log(usersD);
+let resultD = usersD.filter(item => item.length > 0);
+console.log(resultD);
+//Proverka
+if (Array.isArray(resultD)) {
+	console.log('Massiv');
+} else {
+	console.log('Ne massiv');
+};
+let deletArr = usersD.splice(0, 1);
+console.log(deletArr);
+console.log(usersD);
+usersD.unshift('Masha', 'Pasha');
+console.log(usersD);
+
+//#3
+let arrD1 = ['Vanya', 'Kolya', 'Olya'];
+let deletArr2 = arrD1.splice(1, 1);
+console.log(deletArr2);
+
+//#4
+let srtD = 'Vanya, Kolya, Olya';
+let arrD3 = srtD.split(',');
+console.log(arrD3);
+
+//#5
+let arrD4 = [9, 2, 8,];
+let reduceV = arrD4.reduce(function (previousValue, item, index, array) {
+	console.log(previousValue);
+});
+
 
 
 
