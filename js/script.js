@@ -620,6 +620,16 @@ let reduceV = arrD4.reduce(function (previousValue, item, index, array) {
 	console.log(previousValue);
 });
 
+//alert
+//alert('Privet!');
+
+//Confirm
+//const confirmR = confirm('Do you want to verstat?');
+
+//Prompt
+const promptR = prompt("Kto ti?");
+console.log(promptR);
+
 
 
 
