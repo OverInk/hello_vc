@@ -630,6 +630,13 @@ let reduceV = arrD4.reduce(function (previousValue, item, index, array) {
 const promptR = prompt("Kto ti?");
 console.log(promptR);
 
+const bodyElement = document.body;
+const childNodes = bodyElement.childNodes;
+for (let node of childNodes) {
+	console.log(node);
+};
+
+
 
 
 
