@@ -627,14 +627,20 @@ let reduceV = arrD4.reduce(function (previousValue, item, index, array) {
 //const confirmR = confirm('Do you want to verstat?');
 
 //Prompt
-const promptR = prompt("Kto ti?");
-console.log(promptR);
+//const promptR = prompt("Kto ti?");
+//console.log(promptR);
 
 const bodyElement = document.body;
 const childNodes = bodyElement.childNodes;
 for (let node of childNodes) {
 	console.log(node);
 };
+
+const bodyChildren = bodyElement.children;
+console.log(bodyChildren);
+
+const elemOne = document.querySelectorAll('.script');
+console.log(elemOne);
 
 
 
