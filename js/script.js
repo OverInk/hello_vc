@@ -642,6 +642,12 @@ console.log(bodyChildren);
 const elemOne = document.querySelectorAll('.script');
 console.log(elemOne);
 
+const lessonL = document.querySelector('.lesson-l');
+console.log(lessonL);
+
+const elems = document.getElementsByTagName('li');
+console.log(elems);
+
 
 
 
