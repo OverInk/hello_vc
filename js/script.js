@@ -657,6 +657,20 @@ console.log(textElementContent);
 textElement.innerHTML = `<p>${textElementContent}</p> <p>Живи и работай в свободное время</p>`;
 console.log(textElement.innerHTML);
 
+//const text7ElementContent = textElement.outerHTML;
+//console.log(text7ElementContent);
+
+
+textElement.outerHTML = `<p>Использую ouetrHTML</p>`;
+console.log(textElement.outerHTML);
+
+
+const textElement2 = document.querySelector('.text-test');
+const textElementContent2 = textElement2.textContent;
+console.log(textElementContent2);
+
+textElement2.textContent = `<p>Тест вставки текста через textContent </p>`;
+console.log(textElement2.textContent);
 
 
 
