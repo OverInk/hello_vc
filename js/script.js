@@ -648,6 +648,14 @@ console.log(lessonL);
 const elems = document.getElementsByTagName('li');
 console.log(elems);
 
+const textElement = document.querySelector('.lesson__text');
+const textElementContent = textElement.innerHTML;
+console.log(textElementContent);
+
+//textElement.innerHTML = `Живи, а работай в свободное время!`;
+
+textElement.innerHTML = `<p>${textElementContent}</p> <p>Живи и работай в свободное время</p>`;
+console.log(textElement.innerHTML);
 
 
 
