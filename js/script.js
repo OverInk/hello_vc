@@ -684,6 +684,12 @@ console.log(getComment.data);
 const newElem = document.createElement('div');
 console.log(newElem);
 
+newElem.innerHTML = 'Живи, а работай в <span class="red">свободное время</span>';
+console.log(newElem);
+
+const newText = document.createTextNode('Stroka with createTextNode');
+console.log(newText);
+
 
 
 
