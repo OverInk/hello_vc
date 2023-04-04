@@ -689,6 +689,23 @@ console.log(newElem);
 
 const newText = document.createTextNode('Stroka with createTextNode');
 console.log(newText);
+//textElement2.before(newElem);
+//textElement2.after(newElem);
+//textElement2.prepend(newElem);
+textElement2.append(newElem);
+
+//const lessonL = document.querySelector('.lesson-l');
+lessonL.insertAdjacentHTML(
+	'beforebegin',
+	'<p>Это снова проба вставки <spam class ="red"> строки в HTML</span>!</p>',
+);
+
+const textElem = document.querySelector('.clonetext');
+const cloneTextElement = textElem.cloneNode(true);
+const lessonL2 = document.querySelector('.lesson21');
+lessonL2.after(cloneTextElement);
+
+
 
 
 
