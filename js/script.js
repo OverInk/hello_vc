@@ -672,6 +672,18 @@ console.log(textElementContent2);
 textElement2.textContent = `<p>Тест вставки текста через textContent </p>`;
 console.log(textElement2.textContent);
 
+const getComment = textElement2.nextSibling;
+console.log(getComment);
+console.log(getComment.data);
+
+//Изменение комментария
+getComment.data = 'Privet data';
+console.log(getComment.data);
+
+//Создание нового элемента
+const newElem = document.createElement('div');
+console.log(newElem);
+
 
 
 
