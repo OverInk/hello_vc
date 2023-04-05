@@ -721,6 +721,10 @@ element.style.cssText = `
 	background-color:yellow;
 `;
 
+console.log(element.style.color);
+
+const elementStyle = getComputedStyle(element);
+console.log(elementStyle.color);
 
 
 
