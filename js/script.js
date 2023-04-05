@@ -705,6 +705,16 @@ const cloneTextElement = textElem.cloneNode(true);
 const lessonL2 = document.querySelector('.lesson21');
 lessonL2.after(cloneTextElement);
 
+const element = document.querySelector('.lesson-l');
+console.log(element);
+const elementClass = element.className;
+console.log(elementClass);
+element.classList.add('active');
+for (let className of element.classList) {
+	console.log(className);
+};
+
+element.style.color = "red";
 
 
 
