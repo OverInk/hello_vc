@@ -716,6 +716,11 @@ for (let className of element.classList) {
 
 element.style.color = "red";
 
+element.style.cssText = `
+	margin-bottom:30px;
+	background-color:yellow;
+`;
+
 
 
 
