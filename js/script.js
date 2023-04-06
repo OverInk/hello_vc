@@ -731,6 +731,29 @@ if (lessonL.hasAttribute('some-attribute')) {
 	console.log('Some-attribute существует');
 };
 
+//HOMEWORK DOM/ #1
+const domHomew = document.querySelector('.homework');
+console.log(domHomew.dataset.sayHi);
+
+//#2 		VOPROS ISPRAVIT'
+const domLiHome = document.getElementsByTagName('li')[3];
+const elemLi = domLiHome.textContent;
+console.log(elemLi);
+
+//#3
+const domClassH = document.querySelector('.like');
+console.log(domClassH);
+
+//#4
+const domVstavkaH = document.querySelector('.lesson-ui');
+domVstavkaH.insertAdjacentHTML(
+	'beforeend',
+	'<li>Текст из домашки</li>'
+);
+
+
+
+
 
 
 
