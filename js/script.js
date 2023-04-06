@@ -726,6 +726,12 @@ console.log(element.style.color);
 const elementStyle = getComputedStyle(element);
 console.log(elementStyle.color);
 
+lessonL.setAttribute('some-attribute', 'value-attribute');
+if (lessonL.hasAttribute('some-attribute')) {
+	console.log('Some-attribute существует');
+};
+
+
 
 
 
