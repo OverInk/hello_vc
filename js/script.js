@@ -735,7 +735,7 @@ if (lessonL.hasAttribute('some-attribute')) {
 const domHomew = document.querySelector('.homework');
 console.log(domHomew.dataset.sayHi);
 
-//#2 		VOPROS ISPRAVIT'
+//#2 
 const domLiHome = document.getElementsByTagName('li')[3];
 const elemLi = domLiHome.textContent;
 console.log(elemLi);
@@ -750,6 +750,38 @@ domVstavkaH.insertAdjacentHTML(
 	'beforeend',
 	'<li>Текст из домашки</li>'
 );
+
+//Koordinati
+const mainElem = document.documentElement;
+const mainElemWidth = mainElem.clientWidth;
+const mainElemHeight = mainElem.clientHeight;
+console.log(mainElemWidth);
+console.log(mainElemHeight);
+
+const windowW = window.innerWidth;
+const windowH = window.innerHeight;
+console.log(windowW);
+console.log(windowH);
+
+//maybe slipet
+let scrollWidth = Math.max(
+	document.body.scrollWidth, document.documentElement.scrollWidth,
+	document.body.offsetWidth, document.documentElement.offsetWidth,
+	document.body.clientWidth, document.documentElement.clientWidth
+);
+let scrollHeight = Math.max(
+	document.body.scrollHeight, document.documentElement.scrollHeight,
+	document.body.offsetHeight, document.documentElement.offsetHeight,
+	document.body.clientHeight, document.documentElement.clientHeight
+);
+console.log(scrollWidth);
+console.log(scrollHeight);
+
+const windowScrollTop = window.pageYOffset;
+const windowScrollLeft = windowW.pageXOffset;
+console.log(windowScrollTop);
+console.log(windowScrollLeft);
+
 
 
 
