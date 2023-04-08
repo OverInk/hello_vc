@@ -786,6 +786,25 @@ console.log(windowScrollLeft);
 const blockM = document.querySelector('.lesson__block');
 const elemOffsetPareant = blockM.offsetParent;
 console.log(elemOffsetPareant);
+const elemOffsetLeft = blockM.offsetLeft;
+console.log(elemOffsetLeft);
+const elemOffsetTop = blockM.offsetTop;
+console.log(elemOffsetTop);
+
+const elemClientLeft = blockM.clientLeft;
+console.log(elemClientLeft);
+const elemClientTop = blockM.clientTop;
+console.log(elemClientTop);
+
+const elemClientWidth = blockM.clientWidth;
+console.log(elemClientWidth);
+const elemClientHeight = blockM.clientHeight;
+console.log(elemClientHeight);
+
+const elemScrollWidth = blockM.scrollWidth;
+console.log(elemScrollWidth);
+const elemScrollHeight = blockM.scrollHeight;
+console.log(elemScrollHeight);
 
 
 
