@@ -782,6 +782,11 @@ const windowScrollLeft = windowW.pageXOffset;
 console.log(windowScrollTop);
 console.log(windowScrollLeft);
 
+//Metrika
+const blockM = document.querySelector('.lesson__block');
+const elemOffsetPareant = blockM.offsetParent;
+console.log(elemOffsetPareant);
+
 
 
 

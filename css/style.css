@@ -19,3 +19,23 @@ h2 {
   color: red;
   font-size: 20px;
 }
+
+.lesson__selected {
+  background-color: #794f45;
+  padding: 15px;
+  color: white;
+}
+.lesson__block {
+  margin: 0px auto;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  border: 20px solid #7a956b;
+  overflow: auto;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.lesson__block p:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
