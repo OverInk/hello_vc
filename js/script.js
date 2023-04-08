@@ -806,6 +806,29 @@ console.log(elemScrollWidth);
 const elemScrollHeight = blockM.scrollHeight;
 console.log(elemScrollHeight);
 
+//Js Homework #1
+const homeWidthWin = window.innerWidth;
+console.log(homeWidthWin);
+
+const homeElem = document.documentElement;
+const homeElemWidth = homeElem.clientWidth;
+console.log(homeElemWidth);
+
+const homeRaznicaProcrutka = homeWidthWin - homeElemWidth;
+console.log(homeRaznicaProcrutka);
+
+//#2
+//console.log(homeScrollTop);
+//homeTest.scrollTop = 500;
+window.scrollTo(0, 100);
+
+//#3
+const homeElem1 = document.elementFromPoint(100, 200);
+const homeElem2 = document.elementFromPoint(500, 548);
+const homeElem3 = document.elementFromPoint(357, 1000);
+console.log(homeElem1);
+console.log(homeElem2);
+console.log(homeElem3);
 
 
 
