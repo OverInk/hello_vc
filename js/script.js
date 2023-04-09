@@ -864,6 +864,17 @@ function showConsole1() {
 button1.addEventListener("click", showConsole1, options);
 
 
+const button2 = document.querySelector('.button2');
+function showConsole2(event1) {
+	//console.log(event1.type);
+	//console.log(event1.target);
+	//console.log(event1.currentTarget);
+	//console.log(event1.clientX);
+	//console.log(event1.clientY);
+	console.log(event1);
+};
+button2.addEventListener("click", showConsole2);
+
 
 
 
