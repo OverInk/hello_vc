@@ -838,10 +838,34 @@ const button = document.querySelector('.button');
 //};
 
 //ИЛИ (const button  указан выше)
-function showConsole() {
+//function showConsole() {
+//	console.log('Klik!');
+//};
+//button.onclick = showConsole;
+
+//const button = document.querySelector('.button');
+button.addEventListener("click", function (e) {
+	console.log('Клик!');
+});
+button.addEventListener("click", function (e) {
+	console.log('Клак!');
+});
+
+
+const options = {
+	"capture": false,
+	"once": true,
+	"passive": false,
+};
+const button1 = document.querySelector('.button1');
+function showConsole1() {
 	console.log('Klik!');
 };
-button.onclick = showConsole;
+button1.addEventListener("click", showConsole1, options);
+
+
+
+
 
 
 
