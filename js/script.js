@@ -831,6 +831,20 @@ console.log(homeElem2);
 console.log(homeElem3);
 
 
+//Sobitiya
+const button = document.querySelector('.button');
+//button.onclick = function () {
+//	console.log('Клик!');
+//};
+
+//ИЛИ (const button  указан выше)
+function showConsole() {
+	console.log('Klik!');
+};
+button.onclick = showConsole;
+
+
+
 
 
 
