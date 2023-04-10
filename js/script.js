@@ -923,6 +923,12 @@ function menu1(event) {
 	}
 };
 
+const link1 = document.querySelector('.link');
+link1.addEventListener("click", function (event) {
+	console.log('Наши действия');
+	event.preventDefault();
+});
+
 
 
 
