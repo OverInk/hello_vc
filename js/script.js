@@ -876,6 +876,23 @@ function showConsole2(event1) {
 button2.addEventListener("click", showConsole2);
 
 
+const block = document.querySelector('.block');
+const blockInner = document.querySelector('.block__inner');
+const blockInnerInner = document.querySelector('.block__inner-inner');
+
+block.addEventListener("click", function (event) {
+	console.log('Клик на блок!');
+});
+
+blockInner.addEventListener("click", function (event) {
+	console.log('Клик на блок второго уровня!');
+}, { "capture": true });
+
+blockInnerInner.addEventListener("click", function (event) {
+	console.log('Клик на блок третьего уровня!');
+});
+
+
 
 
 
