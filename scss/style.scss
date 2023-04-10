@@ -51,3 +51,28 @@ h2 {
 	border: 2px solid black;
 	background: rgb(25, 171, 25);
  }
+
+ .menu {
+	display: inline-block;
+	&__list {
+		background-color: orange;
+		padding: 15px;
+	}
+}
+ .menu._active .menu__list {
+	display: block;
+ }
+
+.menu._active .menu__button span:first-child {
+	display: none;
+}
+.menu._active .menu__button span:last-child {
+	display: block;
+}
+
+.menu__button span:first-child {
+	display: block;
+}
+.menu__button span:last-child {
+	display: none;
+}

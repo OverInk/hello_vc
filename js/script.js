@@ -892,6 +892,37 @@ blockInnerInner.addEventListener("click", function (event) {
 	console.log('Клик на блок третьего уровня!');
 });
 
+//const buttonD = document.querySelectorAll('.button');
+//function showConsole3() {
+//console.log('Ура!');
+//};
+//buttonD.forEach(buttonItem => {
+//buttonItem.addEventListener("click", showConsole3);
+//});
+
+
+
+const lessonD = document.querySelector('.lesson');
+function showConsole3() {
+	console.log('Ура!');
+};
+lessonD.addEventListener("click", function (event) {
+	if (event.target.closest('button')) {
+		showConsole3();
+	}
+});
+
+const menuBody = document.querySelector('.menu');
+document.addEventListener("click", menu1);
+function menu1(event) {
+	if (event.target.closest('.menu__button')) {
+		menuBody.classList.toggle('_active');
+	}
+	if (!event.target.closest('.menu')) {
+		menuBody.classList.remove('_active');
+	}
+};
+
 
 
 
