@@ -954,9 +954,20 @@ document.addEventListener("keydown", function (event) {
 	};
 });
 
+const txtItem = document.querySelector('.textarea__item');
+const txtItemLimited = document.querySelector('maxlength');
+const txtCounter = document.querySelector('.textarea__counter span');
+txtCounter.innerHTML = txtItemLimited;
 
+txtItem.addEventListener("keyup", txtSetCounter);
+function txtSetCounter() {
+	const txtCounterResult = txtItemLimited - txtItem.value.length;
+	txtCounter.innerHTML = txtCounterResult;
+};
 
-
+txtItem.addEventListener("keydown", function (event) {
+	if (event.repeat) txtSetCounter();
+});
 
 
 
