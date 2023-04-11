@@ -929,6 +929,19 @@ link1.addEventListener("click", function (event) {
 	event.preventDefault();
 });
 
+const buttonM = document.querySelector('.button-click');
+
+buttonM.addEventListener("mousedown", function (event2) {
+	console.log(`нажата кнопка ${event2.which}`);
+});
+buttonM.addEventListener("click", function (event2) {
+	console.log(`нажата основная кнопка мыши`);
+});
+buttonM.addEventListener("contexmenu", function (event2) {
+	console.log(`Вызвано контексное меню`);
+});
+
+
 
 
 
