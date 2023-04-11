@@ -941,6 +941,18 @@ buttonM.addEventListener("contexmenu", function (event2) {
 	console.log(`Вызвано контексное меню`);
 });
 
+document.addEventListener("keydown", function (event) {
+	console.log(`Нажата клавиша ${event.code} (${event.key})`);
+});
+document.addEventListener("keyup", function (event) {
+	console.log(`Отжата клавиша ${event.code} (${event.key})`);
+});
+
+document.addEventListener("keydown", function (event) {
+	if (event.code == 'KeyZ' && (event.ctrlKey || event.metaKey)) {
+		console.log('Отмена действий! (клавиша Z)');
+	};
+});
 
 
 
