@@ -923,6 +923,13 @@ function menu1(event) {
 	}
 };
 
+document.addEventListener("keyup", function (event) {
+	console.log(event.code);
+	if (event.code === 'Escape') {
+		menuBody.classList.remove('_active');
+	};
+});
+
 const link1 = document.querySelector('.link');
 link1.addEventListener("click", function (event) {
 	console.log('Наши действия');
@@ -968,6 +975,12 @@ function txtSetCounter() {
 txtItem.addEventListener("keydown", function (event) {
 	if (event.repeat) txtSetCounter();
 });
+
+
+//PROKRYTKA (scroll)
+//window.addEventListener("scroll", function (event) {
+//	console.log(`${scrollY}px`);
+//});
 
 
 
