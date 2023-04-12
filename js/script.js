@@ -982,6 +982,23 @@ txtItem.addEventListener("keydown", function (event) {
 //	console.log(`${scrollY}px`);
 //});
 
+document.addEventListener("DOMContentLoaded", readyDom);
+window.addEventListener("load", redyLoad);
+
+function readyDom() {
+	const image = document.querySelector('.image');
+	console.log(document.readyState);
+	console.log('Dom загружен!');
+	console.log(image.offsetWidth);
+};
+
+function redyLoad() {
+	console.log(document.readyState);
+	const image1 = document.querySelector('.image');
+	console.log('Станица загружена!');
+	console.log(image1.offsetWidth);
+};
+
 
 
 
