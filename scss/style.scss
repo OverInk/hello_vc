@@ -8,14 +8,17 @@ h1 {
 body {
 	font-size: 20px;
 }
+
 h2 {
-	color:yellow;
+	color: yellow;
 	font-size: 16px;
 }
-.red{
+
+.red {
 	color: red;
 	font-size: 20px;
 }
+
 .lesson {
 
 	&__selected {
@@ -35,6 +38,7 @@ h2 {
 		line-height: 150%;
 	}
 }
+
 .lesson__block p:not(:last-child) {
 	margin: 0px 0px 20px 0px;
 }
@@ -45,27 +49,30 @@ h2 {
 	font-size: 20px;
 	margin: 10px;
 	padding: 10px;
- }
+}
 
 #in2 {
 	border: 2px solid black;
 	background: rgb(25, 171, 25);
- }
+}
 
- .menu {
+.menu {
 	display: inline-block;
+
 	&__list {
 		background-color: orange;
 		padding: 15px;
 	}
 }
- .menu._active .menu__list {
+
+.menu._active .menu__list {
 	display: block;
- }
+}
 
 .menu._active .menu__button span:first-child {
 	display: none;
 }
+
 .menu._active .menu__button span:last-child {
 	display: block;
 }
@@ -73,6 +80,7 @@ h2 {
 .menu__button span:first-child {
 	display: block;
 }
+
 .menu__button span:last-child {
 	display: none;
 }
@@ -80,23 +88,31 @@ h2 {
 .domashka {
 	height: 100%;
 	width: 4%;
-
 	background-color: gray;
 	padding: 10px;
 }
-.button-doma {
-}
+
 .image-domashka {
 	height: 30px;
 	margin: 0 auto;
 }
-.form-doma {
-}
+
 .textarea {
 
-		&__doma {
-		}
+	&__doma {}
 
-		&__text-doma {
-		}
+}
+
+.domashka._active {
+	width: 14%;
+}
+
+
+.domashka._active .button-doma {
+	display: none;
+	width: 40%;
+}
+
+.domashka._active .form-doma {
+	display: block;
 }

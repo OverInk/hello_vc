@@ -961,20 +961,20 @@ document.addEventListener("keydown", function (event) {
 	};
 });
 
-const txtItem = document.querySelector('.textarea__item');
-const txtItemLimited = document.querySelector('maxlength');
-const txtCounter = document.querySelector('.textarea__counter span');
-txtCounter.innerHTML = txtItemLimited;
+//const txtItem = document.querySelector('.textarea__item');
+//const txtItemLimited = document.querySelector('maxlength');
+//const txtCounter = document.querySelector('.textarea__counter span');
+//txtCounter.innerHTML = txtItemLimited;
 
-txtItem.addEventListener("keyup", txtSetCounter);
-function txtSetCounter() {
-	const txtCounterResult = txtItemLimited - txtItem.value.length;
-	txtCounter.innerHTML = txtCounterResult;
-};
+//txtItem.addEventListener("keyup", txtSetCounter);
+//function txtSetCounter() {
+//	const txtCounterResult = txtItemLimited - txtItem.value.length;
+//	txtCounter.innerHTML = txtCounterResult;
+//};
 
-txtItem.addEventListener("keydown", function (event) {
-	if (event.repeat) txtSetCounter();
-});
+//txtItem.addEventListener("keydown", function (event) {
+//	if (event.repeat) txtSetCounter();
+//});
 
 
 //PROKRYTKA (scroll)
@@ -998,6 +998,42 @@ function redyLoad() {
 	console.log('Станица загружена!');
 	console.log(image1.offsetWidth);
 };
+
+//Homework
+const homeWork = document.querySelector('.domashka');
+document.addEventListener("click", homeworkClick);
+function homeworkClick(eventH) {
+	if (eventH.target.closest('.button-doma')) {
+		homeWork.classList.toggle('_active');
+	};
+	if (!eventH.target.closest('.domashka')) {
+		homeWork.classList.remove('_active');
+	};
+};
+document.addEventListener("keyup", function (eventH) {
+	console.log(eventH.code);
+	if (eventH.code === 'Escape') {
+		homeWork.classList.remove('_active');
+	};
+});
+
+const homeTextarea = document.querySelector('.textarea__doma');
+const homeLength = document.querySelector('maxlenght');
+const homeTextareaText = document.querySelector('.textarea__text-doma span');
+homeTextareaText.innerHTML = homeLength;
+
+homeTextarea.addEventListener("keyup", setOffHome);
+function setOffHome() {
+	const homeResult = homeLength - homeTextarea.value.length;
+	homeTextareaText.innerHTML = homeResult;
+};
+
+homeTextarea.addEventListener("keydown", function (eventHH) {
+	if (eventHH.repeat) setOffHome;
+});
+
+
+
 
 
 

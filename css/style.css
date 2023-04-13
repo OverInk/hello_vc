@@ -92,3 +92,16 @@ h2 {
   height: 30px;
   margin: 0 auto;
 }
+
+.domashka._active {
+  width: 14%;
+}
+
+.domashka._active .button-doma {
+  display: none;
+  width: 40%;
+}
+
+.domashka._active .form-doma {
+  display: block;
+}
