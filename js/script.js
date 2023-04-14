@@ -1032,6 +1032,18 @@ homeTextarea.addEventListener("keydown", function (eventHH) {
 	if (eventHH.repeat) setOffHome;
 });
 
+//Js and Forms
+document.body.insertAdjacentHTML(
+	"afterbegin",
+	`<form name="some" class="some-form" action="#">Поле ввода</form>`
+);
+
+console.log(document.forms);
+
+const mainForm = document.forms.main;
+const mainFormInput = mainForm.nameInput;
+//const mainFormtextarea = mainForm.elements.nameTextarea;
+console.log(mainFormInput.value);
 
 
 
