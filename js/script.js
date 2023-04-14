@@ -1041,7 +1041,7 @@ document.body.insertAdjacentHTML(
 console.log(document.forms);
 
 const mainForm = document.forms.main;
-const mainFormInput = mainForm.nameInput;
+const mainFormInput = mainForm.element.nameInput;
 //const mainFormtextarea = mainForm.elements.nameTextarea;
 console.log(mainFormInput.value);
 
