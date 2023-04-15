@@ -1039,8 +1039,13 @@ console.log(document.forms);
 const mainForm = document.forms.main;
 //const mainFormInput = mainForm.element.nameInput;
 //const mainFormtextarea = mainForm.elements.nameTextarea;
-console.log(mainFormInput.value);
+//console.log(mainFormInput.value);
 
+const mainFormSelect = mainForm.nameSelect;
+console.log(mainFormSelect.options);
+
+const mainSelectIndex = mainFormSelect.selectedIndex;
+console.log(mainSelectIndex);
 
 
 
