@@ -1037,7 +1037,7 @@ document.body.insertAdjacentHTML(
 console.log(document.forms);
 
 const mainForm = document.forms.main;
-//const mainFormInput = mainForm.element.nameInput;
+const mainFormInput = mainForm.element.nameInput;
 //const mainFormtextarea = mainForm.elements.nameTextarea;
 //console.log(mainFormInput.value);
 
@@ -1056,6 +1056,22 @@ console.log(mainSelectText);
 //mainFormSelect.option[1].selected = true;
 mainFormSelect.selectedIndex = 1;
 //mainFormSelect.value = 2;
+
+let newOptiom = new Option("1000", "4", false, false);
+mainFormSelect.append(newOptiom);
+
+
+//const mainForm = document.forms.main;
+//const mainFormInput = mainForm.element.nameInput;
+const mainInputPlaceolder = mainFormInput.placeholder;
+mainFormInput.addEventListener("focus", function (e) {
+	mainFormInput.placeholder = "";
+});
+mainFormInput.addEventListener("blur", function (e) {
+	mainFormInput.placeholder = mainInputPlaceolder;
+});
+
+
 
 
 
