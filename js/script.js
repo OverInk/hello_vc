@@ -1047,6 +1047,16 @@ console.log(mainFormSelect.options);
 const mainSelectIndex = mainFormSelect.selectedIndex;
 console.log(mainSelectIndex);
 
+const mainSelectValue = mainFormSelect.value;
+console.log(mainSelectValue);
+
+const mainSelectText = mainFormSelect.option[mainSelectIndex].text;
+console.log(mainSelectText);
+
+//mainFormSelect.option[1].selected = true;
+mainFormSelect.selectedIndex = 1;
+//mainFormSelect.value = 2;
+
 
 
 
