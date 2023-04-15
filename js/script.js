@@ -83,10 +83,6 @@ userB = Number(userB);
 console.log(userB);
 console.log(typeof userB);
 
-let userC = "Фрилансер";
-userC = Number(userC);
-console.log(userC);
-console.log(typeof userC);
 
 let userD = "36" / "6";
 console.log(userD);
@@ -1041,7 +1037,7 @@ document.body.insertAdjacentHTML(
 console.log(document.forms);
 
 const mainForm = document.forms.main;
-const mainFormInput = mainForm.element.nameInput;
+//const mainFormInput = mainForm.element.nameInput;
 //const mainFormtextarea = mainForm.elements.nameTextarea;
 console.log(mainFormInput.value);
 
