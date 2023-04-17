@@ -1072,6 +1072,17 @@ mainFormInput.addEventListener("blur", function (e) {
 });
 
 
+mainFormInput.addEventListener("copy", function (e) {
+	console.log('Копируем');
+});
+mainFormInput.addEventListener("paste", function (e) {
+	console.log('Вставляем');
+});
+mainFormInput.addEventListener("cut", function (e) {
+	console.log('Вырезаем');
+});
+
+
 
 
 
